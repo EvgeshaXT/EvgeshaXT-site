@@ -1,0 +1,61 @@
+@using System.Globalization
+
+@{
+    string currentPath = Context.Request.Path.Value ?? "";
+    bool isRuPath = currentPath.StartsWith("/ru", StringComparison.OrdinalIgnoreCase);
+
+    string menuEvgeshaxtTitle, menuVideosTitle, menuVideos;
+
+    if (isRuPath)
+    {
+        menuEvgeshaxtTitle = "Главная страница";
+        menuVideosTitle = "Видео и мгновенные повторы";
+        menuVideos = "Видео";
+    }
+    else
+    {
+        menuEvgeshaxtTitle = "Main page";
+        menuVideosTitle = "Videos and instant replays";
+        menuVideos = "Videos";
+    }
+}
+
+<!DOCTYPE html>
+<html lang="@(isRuPath ? "ru" : "en")">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="application name" content="EvgeshaXT's Den" />
+        <meta name="author" content="EvgeshaXT" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>@ViewData["Title"]</title>
+
+        <link rel="alternate" hreflang="x-default" href="https://evgeshaxt.com" />
+        <link rel="alternate" hreflang="en" href="https://evgeshaxt.com" />
+        <link rel="alternate" hreflang="ru" href="https://evgeshaxt.com/ru/" />
+
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        @RenderSection("MetaTags", false)
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <ul class="nav">
+                    <li><a href="/" id="EvgeshaXT" translate="no" title="@menuEvgeshaxtTitle">EvgeshaXT</a></li>
+                    <li><a href="/videos" translate="yes" title="@menuVideosTitle">@menuVideos</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <form method="get">
+                    <select name="culture" onchange="this.form.submit()">
+                        <option value="en" @(!isRuPath ? "selected" : "")>English</option>
+                        <option value="ru" @(isRuPath ? "selected" : "")>Русский</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+    </body>
+</html>

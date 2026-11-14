@@ -1,0 +1,26 @@
+@page
+@model EvgeshaXT.Pages.Ru.Videos.TankiOnlineModel
+@{
+    ViewData["Title"] = "Танки Онлайн - EvgeshaXT's Den";
+}
+@section MetaTags {
+    <meta name="description" content="Видео по Танкам Онлайн и мгновенные повторы от EvgeshaXT" />
+    <meta name="keywords" content="EvgeshaXT, Танки Онлайн, Видео, Мгновенные повторы" />
+}
+
+<div class="content">
+    <h1>Видео и мгновенные повторы по Танкам Онлайн</h1>
+    <div class="cards-section">
+        @foreach (var video in Model.VideoCards)
+        {
+            <div class="video-card">
+                <video controls src="@video.Src"></video>
+                <h3>@video.Title</h3>
+                <div class="video-info">
+                    <p>@video.DirectoryName</p>
+                    <p>@video.DateTime.ToString("yyyy.MM.dd HH:mm")</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

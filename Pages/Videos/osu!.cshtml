@@ -1,0 +1,26 @@
+@page
+@model EvgeshaXT.Pages.Videos.OsuModel
+@{
+    ViewData["Title"] = "osu! - EvgeshaXT's Den";
+}
+@section MetaTags {
+    <meta name="description" content="osu! videos and instant replays from EvgeshaXT" />
+    <meta name="keywords" content="EvgeshaXT, osu!, Videos, Instant Replays" />
+}
+
+<div class="content">
+    <h1>osu! videos and instant replays</h1>
+    <div class="cards-section">
+        @foreach (var video in Model.VideoCards)
+        {
+            <div class="video-card">
+                <video controls src="@video.Src"></video>
+                <h3>@video.Title</h3>
+                <div class="video-info">
+                    <p>@video.DirectoryName</p>
+                    <p>@video.DateTime.ToString("yyyy.MM.dd HH:mm")</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

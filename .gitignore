@@ -1,0 +1,9 @@
+auto/
+bin/
+obj/
+Properties/
+js/
+lib/
+wwwroot/Videos/
+appsettings.Development.json
+log.txt

@@ -1,0 +1,33 @@
+@page
+@model EvgeshaXT.Pages.Ru.IndexModel
+@{
+    ViewData["Title"] = "Логово EvgeshaXT";
+}
+@section MetaTags {
+    <meta name="description" content="Официальный сайт и родной дом пользователя EvgeshaXT в сети Интернет." />
+    <meta name="keywords" content="EvgeshaXT, главная страница" />
+}
+
+<div class="content">
+    <section>
+        <h1>@Model.DayPartMessage</h1>
+        <p class="myDear">Мой дорогой гость..~</p>
+    </section>
+
+    <div class="content-item">
+        <p>Добро пожаловать на мой сайт!
+            В интернете я известен под псевдонимом EvgeshaXT, а зовут меня Женёк.
+            Тут я разрабатываю свой собственный сайт.
+            Здесь вы сможете увидеть различную информацию обо мне, записи с моих личных дневников, новости из моей жизни, мгновенные видеоповторы, узнать ответы на многие интересующие вас вопросы и многое другое!
+            Данный сайт пока находится только на стадии разработки, здесь почти ничего нет и выглядит сыро, но он будет готов уже в течение 2-3 месяцев!
+            Я буду рад увидеть тебя здесь снова! Увидимся позже)
+        </p>
+    </div>
+
+    <div class="content-item">
+        <div>
+            <a id="osu" href="https://osu.ppy.sh/users/38564118" target="_blank">Мой osu! профиль</a>
+        </div>
+        <img class="mainImg" src="~/background.jpg" alt="EvgeshaXT girl on the banner" />
+    </div>
+</div>

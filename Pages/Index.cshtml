@@ -1,0 +1,33 @@
+@page
+@model EvgeshaXT.Pages.IndexModel
+@{
+    ViewData["Title"] = "EvgeshaXT's Den";
+}
+@section MetaTags {
+    <meta name="description" content="The official website and home of EvgeshaXT on the Internet." />
+    <meta name="keywords" content="EvgeshaXT, Main page" />
+}
+
+<div class="content">
+    <section>
+        <h1>@Model.DayPartMessage</h1>
+        <p class="myDear">My dear guest..~</p>
+    </section>
+
+    <div class="content-item">
+        <p>Welcome to my website!
+            On the Internet, I'm known as EvgeshaXT, but just call me Evgesha.
+            Here I’m developing my own website.
+            Here you'll be able to find various info about me, entries from my personal diaries, life updates, instant replays, answers to many of your questions, and much more!
+            This site is still in the development stage, there’s almost nothing on it, it's still pretty empty and rough around the edges — but it will be ready in the next 2-3 months!
+            I'll be glad to see you here again! See you later)
+        </p>
+    </div>
+
+    <div class="content-item">
+        <div>
+            <a id="osu" href="https://osu.ppy.sh/users/38564118" target="_blank">My osu! profile</a>
+        </div>
+        <img class="mainImg" src="~/background.jpg" alt="EvgeshaXT girl on the banner" />
+    </div>
+</div>
