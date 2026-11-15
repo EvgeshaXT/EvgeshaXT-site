@@ -23,40 +23,24 @@ app.UseRequestLocalization(new RequestLocalizationOptions
 
 app.Use(async (context, next) =>
 {
-    string selectedCulture = context.Request.Query["culture"].ToString();
     string path = context.Request.Path.Value ?? "";
 
-    if (selectedCulture != "")
-    {
-        CookieOptions options = new()
-        {
-            MaxAge = TimeSpan.FromDays(400),
-            HttpOnly = true,
-            IsEssential = true
-        };
+    string culture = "";
+    string selectedCulture = context.Request.Query["culture"].ToString();
 
-        context.Response.Cookies.Append("culture", selectedCulture, options);
-
-        CultureInfo cultureInfo = new(selectedCulture);
-        CultureInfo.CurrentCulture = cultureInfo;
-        CultureInfo.CurrentUICulture = cultureInfo;
-
-        string newPath = selectedCulture == "ru" ? GetRuPath(path) : GetEnPath(path);
-        context.Response.Redirect(newPath);
-
-        return;
-    }
-    else
+    if (selectedCulture == "")
     {
         string cookieCulture = context.Request.Cookies["culture"] ?? "";
-        string culture = cookieCulture != "" ? cookieCulture : CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+
+        if (cookieCulture == "ru" || cookieCulture == "en") { culture = cookieCulture; }
+        else culture = GetCultureFromRequest(context);
 
         CultureInfo cultureInfo = new(culture);
         CultureInfo.CurrentCulture = cultureInfo;
         CultureInfo.CurrentUICulture = cultureInfo;
 
         bool isRuPath = path.StartsWith("/ru", StringComparison.OrdinalIgnoreCase);
-        bool isRuCulture = culture == "ru" || culture == "be" || culture == "uk";
+        bool isRuCulture = culture == "ru";
 
         if (isRuCulture && !isRuPath)
         {
@@ -69,6 +53,24 @@ app.Use(async (context, next) =>
             return;
         }
     }
+    else
+    {
+        if (selectedCulture == "ru" || selectedCulture == "en")
+        {
+            culture = selectedCulture;
+            SaveCultureToCookie(context, culture);
+        }
+        else culture = GetCultureFromRequest(context);
+
+        CultureInfo cultureInfo = new(culture);
+        CultureInfo.CurrentCulture = cultureInfo;
+        CultureInfo.CurrentUICulture = cultureInfo;
+
+        string newPath = culture == "ru" ? GetRuPath(path) : GetEnPath(path);
+        context.Response.Redirect(newPath);
+
+        return;
+    }
 
     await next();
 });
@@ -78,6 +80,29 @@ app.MapRazorPages();
 VideoManager.Initialize();
 
 app.Run();
+
+string GetCultureFromRequest(HttpContext context)
+{
+    string culture = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+
+    if (culture == "ru" || culture == "be" || culture == "uk") culture = "ru";
+    else culture = "en";
+
+    SaveCultureToCookie(context, culture);
+    return culture;
+}
+
+void SaveCultureToCookie(HttpContext context, string culture)
+{
+    CookieOptions options = new()
+    {
+        MaxAge = TimeSpan.FromDays(400),
+        HttpOnly = true,
+        IsEssential = true
+    };
+
+    context.Response.Cookies.Append("culture", culture, options);
+}
 
 string GetRuPath(string path)
 {
