@@ -1,32 +1,30 @@
 @page
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
 @model EvgeshaXT.Pages.IndexModel
 @{
-    ViewData["Title"] = "EvgeshaXT's Den";
+    ViewData["Title"] = Localizer["IndexPageTitle"];
 }
 @section MetaTags {
-    <meta name="description" content="The official website and home of EvgeshaXT on the Internet." />
-    <meta name="keywords" content="EvgeshaXT, Main page" />
+    <meta name="description" content="@Localizer["IndexPageDescription"]" />
+    <meta name="keywords" content="@Localizer["IndexPageKeywords"]" />
 }
 
 <div class="content">
     <section>
         <h1>@Model.DayPartMessage</h1>
-        <p class="myDear">My dear guest..~</p>
+        <p class="myDear">@Localizer["IndexPageMyDearGuest"]</p>
     </section>
 
     <div class="content-item">
-        <p>Welcome to my website!
-            On the Internet, I'm known as EvgeshaXT, but just call me Evgesha.
-            Here I’m developing my own website.
-            Here you'll be able to find various info about me, entries from my personal diaries, life updates, instant replays, answers to many of your questions, and much more!
-            This site is still in the development stage, there’s almost nothing on it, it's still pretty empty and rough around the edges — but it will be ready in the next 2-3 months!
-            I'll be glad to see you here again! See you later)
-        </p>
+        <p>@Localizer["IndexPageWelcomeText"]</p>
     </div>
 
     <div class="content-item">
         <div>
-            <a id="osu" href="https://osu.ppy.sh/users/38564118" target="_blank">My osu! profile</a>
+            <a id="osu" href="https://osu.ppy.sh/users/38564118" target="_blank">@Localizer["IndexPageMyOsuProfile"]</a>
         </div>
         <img class="mainImg" src="~/background.jpg" alt="EvgeshaXT girl on the banner" />
     </div>

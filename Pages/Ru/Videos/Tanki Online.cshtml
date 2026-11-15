@@ -1,15 +1,19 @@
 @page
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
 @model EvgeshaXT.Pages.Ru.Videos.TankiOnlineModel
 @{
-    ViewData["Title"] = "Танки Онлайн - EvgeshaXT's Den";
+ViewData["Title"] = @Localizer["VideosTankiOnlinePageTitle"];
 }
 @section MetaTags {
-    <meta name="description" content="Видео по Танкам Онлайн и мгновенные повторы от EvgeshaXT" />
-    <meta name="keywords" content="EvgeshaXT, Танки Онлайн, Видео, Мгновенные повторы" />
+    <meta name="description" content="@Localizer["VideosTankiOnlinePageDescription"]" />
+    <meta name="keywords" content="@Localizer["VideosTankiOnlinePageKeywords"]" />
 }
 
 <div class="content">
-    <h1>Видео и мгновенные повторы по Танкам Онлайн</h1>
+    <h1>@Localizer["VideosTankiOnlinePageH1"]</h1>
     <div class="cards-section">
         @foreach (var video in Model.VideoCards)
         {

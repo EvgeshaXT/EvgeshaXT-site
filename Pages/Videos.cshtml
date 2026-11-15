@@ -1,18 +1,22 @@
 @page
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
 @model EvgeshaXT.Pages.VideosModel
 @{
-    ViewData["Title"] = "Videos - EvgeshaXT's Den";
+    ViewData["Title"] = @Localizer["VideosPageTitle"];
 }
 @section MetaTags {
-    <meta name="description" content="Videos and instant replays from EvgeshaXT" />
-    <meta name="keywords" content="EvgeshaXT, Videos, Instant Replays" />
+    <meta name="description" content="@Localizer["VideosPageDescription"]" />
+    <meta name="keywords" content="@Localizer["VideosPageKeywords"]" />
 }
 
 <div class="content">
     <section>
-        <h1>Videos and instant replays</h1>
+        <h1>@Localizer["VideosPageH1"]</h1>
 
-        <h2>Recently added:</h2>
+        <h2>@Localizer["VideosPageLastAdded"]</h2>
         <div class="cards-section">
             @foreach (var video in Model.VideoCards)
             {
@@ -29,7 +33,7 @@
         
         <hr />
 
-        <h2>Categories:</h2>
+        <h2>@Localizer["VideosPageCategories"]</h2>
         <div class="cards-section">
             @foreach (var directory in Model.DirectoryCards)
             {

@@ -1,15 +1,19 @@
 @page
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
 @model EvgeshaXT.Pages.Ru.Videos.DesktopModel
 @{
-    ViewData["Title"] = "Рабочий стол - EvgeshaXT's Den";
+    ViewData["Title"] = @Localizer["VideosDesktopPageTitle"];
 }
 @section MetaTags {
-    <meta name="description" content="Записи рабочего стола и мгновенные повторы EvgeshaXT" />
-    <meta name="keywords" content="EvgeshaXT, Рабочий стол, Видео, Мгновенные повторы" />
+    <meta name="description" content="@Localizer["VideosDesktopPageDescription"]" />
+    <meta name="keywords" content="@Localizer["VideosDesktopPageKeywords"]" />
 }
 
 <div class="content">
-    <h1>Записи и мгновенные повторы рабочего стола</h1>
+    <h1>@Localizer["VideosDesktopPageH1"]</h1>
     <div class="cards-section">
         @foreach (var video in Model.VideoCards)
         {

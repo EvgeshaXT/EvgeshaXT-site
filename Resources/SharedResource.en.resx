@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="MenuEvgeshaxtTitle" xml:space="preserve">
+    <value>Main page</value>
+  </data>
+  <data name="MenuVideosTitle" xml:space="preserve">
+    <value>Video and instant replays</value>
+  </data>
+  <data name="MenuVideos" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+
+  <!-- Index Page -->
+  <data name="IndexPageTitle" xml:space="preserve">
+    <value>EvgeshaXT's Den</value>
+  </data>
+  <data name="IndexPageDescription" xml:space="preserve">
+    <value>The official website and home of EvgeshaXT on the Internet</value>
+  </data>
+  <data name="IndexPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Main page</value>
+  </data>
+  <data name="IndexPageMyDearGuest" xml:space="preserve">
+    <value>My dear guest..~</value>
+  </data>
+  <data name="IndexPageWelcomeText" xml:space="preserve">
+    <value>Welcome to my website!
+            On the Internet, I'm known as EvgeshaXT, but just call me Evgesha.
+            Here I’m developing my own website.
+            Here you'll be able to find various info about me, entries from my personal diaries, life updates, instant replays, answers to many of your questions, and much more!
+            This site is still in the development stage, there’s almost nothing on it, it's still pretty empty and rough around the edges — but it will be ready in the next 2-3 months!
+            I'll be glad to see you here again! See you later)</value>
+  </data>
+  
+  <data name="IndexPageMyOsuProfile" xml:space="preserve">
+    <value>My osu! profile</value>
+  </data>
+
+  <!-- Videos Page -->
+  <data name="VideosPageTitle" xml:space="preserve">
+    <value>Videos - EvgeshaXT's Den</value>
+  </data>
+  <data name="VideosPageDescription" xml:space="preserve">
+    <value>Videos and instant replays from EvgeshaXT</value>
+  </data>
+  <data name="VideosPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Videos, Instant Replays</value>
+  </data>
+  <data name="VideosPageH1" xml:space="preserve">
+    <value>Videos and instant replays</value>
+  </data>
+  <data name="VideosPageLastAdded" xml:space="preserve">
+    <value>Last added:</value>
+  </data>
+  <data name="VideosPageCategories" xml:space="preserve">
+    <value>Categories:</value>
+  </data>
+
+  <!-- Videos/Desktop Page -->
+  <data name="VideosDesktopPageTitle" xml:space="preserve">
+    <value>Desktop videos - EvgeshaXT's Den</value>
+  </data>
+  <data name="VideosDesktopPageDescription" xml:space="preserve">
+    <value>Desktop recordings and instant replays from EvgeshaXT</value>
+  </data>
+  <data name="VideosDesktopPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Desktop, Videos, Instant Replays</value>
+  </data>
+  <data name="VideosDesktopPageH1" xml:space="preserve">
+    <value>Desktop recordings and instant replays</value>
+  </data>
+
+  <!-- Videos/Euro Truck Simulator 2 Page -->
+  <data name="VideosETS2PageTitle" xml:space="preserve">
+    <value>Euro Truck Simulator 2 videos - EvgeshaXT's Den</value>
+  </data>
+  <data name="VideosETS2PageDescription" xml:space="preserve">
+    <value>Euro Truck Simulator 2 instant replays from EvgeshaXT</value>
+  </data>
+  <data name="VideosETS2PageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Euro Truck Simulator 2, Videos, Instant Replays</value>
+  </data>
+  <data name="VideosETS2PageH1" xml:space="preserve">
+    <value>Euro Truck Simulator 2 instant replays</value>
+  </data>
+
+  <!-- Videos/osu! Page -->
+  <data name="VideosOsuPageTitle" xml:space="preserve">
+    <value>osu! - EvgeshaXT's Den</value>
+  </data>
+  <data name="VideosOsuPageDescription" xml:space="preserve">
+    <value>osu! videos and instant replays from EvgeshaXT</value>
+  </data>
+  <data name="VideosOsuPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, osu!, Videos, Instant Replays</value>
+  </data>
+  <data name="VideosOsuPageH1" xml:space="preserve">
+    <value>osu! videos and instant replays</value>
+  </data>
+
+  <!-- Videos/Tanki Online Page -->
+  <data name="VideosTankiOnlinePageTitle" xml:space="preserve">
+    <value>Tanki Online - EvgeshaXT's Den</value>
+  </data>
+  <data name="VideosTankiOnlinePageDescription" xml:space="preserve">
+    <value>Tanki Online videos and instant replays from EvgeshaXT</value>
+  </data>
+  <data name="VideosTankiOnlinePageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Tanki Online, Videos, Instant Replays</value>
+  </data>
+  <data name="VideosTankiOnlinePageH1" xml:space="preserve">
+    <value>Tanki Online videos and instant replays</value>
+  </data>
+</root>

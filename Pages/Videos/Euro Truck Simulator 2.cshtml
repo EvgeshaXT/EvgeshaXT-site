@@ -1,15 +1,19 @@
 @page
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
 @model EvgeshaXT.Pages.Videos.EuroTruckSimulator2Model
 @{
-    ViewData["Title"] = "Euro Truck Simulator 2 - EvgeshaXT's Den";
+    ViewData["Title"] = @Localizer["VideosETS2PageTitle"];
 }
 @section MetaTags {
-    <meta name="description" content="Euro Truck Simulator 2 instant replays from EvgeshaXT" />
-    <meta name="keywords" content="EvgeshaXT, Euro Truck Simulator 2, Videos, Instant Replays" />
+    <meta name="description" content="@Localizer["VideosETS2PageDescription"]" />
+    <meta name="keywords" content="@Localizer["VideosETS2PageKeywords"]" />
 }
 
 <div class="content">
-    <h1>Euro Truck Simulator 2 instant replays</h1>
+    <h1>@Localizer["VideosETS2PageH1"]</h1>
     <div class="cards-section">
         @foreach (var video in Model.VideoCards)
         {

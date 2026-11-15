@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="MenuEvgeshaxtTitle" xml:space="preserve">
+    <value>Главная страница</value>
+  </data>
+  <data name="MenuVideosTitle" xml:space="preserve">
+    <value>Видео и мгновенные повторы</value>
+  </data>
+  <data name="MenuVideos" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+
+  <!-- Index Page -->
+  <data name="IndexPageTitle" xml:space="preserve">
+    <value>Логово EvgeshaXT</value>
+  </data>
+  <data name="IndexPageDescription" xml:space="preserve">
+    <value>Официальный сайт и родной дом пользователя EvgeshaXT в сети Интернет</value>
+  </data>
+  <data name="IndexPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Главная страница</value>
+  </data>
+  <data name="IndexPageMyDearGuest" xml:space="preserve">
+    <value>Мой дорогой гость..~</value>
+  </data>
+  <data name="IndexPageWelcomeText" xml:space="preserve">
+    <value>Добро пожаловать на мой сайт!
+            В интернете я известен под псевдонимом EvgeshaXT, а зовут меня Женёк.
+            Тут я разрабатываю свой собственный сайт.
+            Здесь вы сможете увидеть различную информацию обо мне, записи с моих личных дневников, новости из моей жизни, мгновенные видеоповторы, узнать ответы на многие интересующие вас вопросы и многое другое!
+            Данный сайт пока находится только на стадии разработки, здесь почти ничего нет и выглядит сыро, но он будет готов уже в течение 2-3 месяцев!
+            Я буду рад увидеть тебя здесь снова! Увидимся позже)</value>
+  </data>
+  <data name="IndexPageMyOsuProfile" xml:space="preserve">
+    <value>Мой osu! профиль</value>
+  </data>
+
+  <!-- Videos Page -->
+  <data name="VideosPageTitle" xml:space="preserve">
+    <value>Видео - Логово EvgeshaXT</value>
+  </data>
+  <data name="VideosPageDescription" xml:space="preserve">
+    <value>Видео и мгновенные повторы EvgeshaXT</value>
+  </data>
+  <data name="VideosPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Видео, Мгновенные повторы</value>
+  </data>
+  <data name="VideosPageH1" xml:space="preserve">
+    <value>Видео и мгновенные повторы</value>
+  </data>
+  <data name="VideosPageLastAdded" xml:space="preserve">
+    <value>Последние добавленные:</value>
+  </data>
+  <data name="VideosPageCategories" xml:space="preserve">
+    <value>Категории:</value>
+  </data>
+
+  <!-- Videos/Desktop Page -->
+  <data name="VideosDesktopPageTitle" xml:space="preserve">
+    <value>Видео - Логово EvgeshaXT</value>
+  </data>
+  <data name="VideosDesktopPageDescription" xml:space="preserve">
+    <value>Записи рабочего стола и мгновенные повторы EvgeshaXT</value>
+  </data>
+  <data name="VideosDesktopPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Рабочий стол, Видео, Мгновенные повторы</value>
+  </data>
+  <data name="VideosDesktopPageH1" xml:space="preserve">
+    <value>Записи и мгновенные повторы рабочего стола</value>
+  </data>
+
+  <!-- Videos/Euro Truck Simulator 2 Page -->
+  <data name="VideosETS2PageTitle" xml:space="preserve">
+    <value>Euro Truck Simulator 2 - Логово EvgeshaXT</value>
+  </data>
+  <data name="VideosETS2PageDescription" xml:space="preserve">
+    <value>Мгновенные повторы по Euro Truck Simulator 2 EvgeshaXT</value>
+  </data>
+  <data name="VideosETS2PageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Euro Truck Simulator 2, Видео, Мгновенные повторы</value>
+  </data>
+  <data name="VideosETS2PageH1" xml:space="preserve">
+    <value>Мгновенные повторы Euro Truck Simulator 2</value>
+  </data>
+
+  <!-- Videos/osu! Page -->
+  <data name="VideosOsuPageTitle" xml:space="preserve">
+    <value>osu! - Логово EvgeshaXT</value>
+  </data>
+  <data name="VideosOsuPageDescription" xml:space="preserve">
+    <value>osu! видео и мгновенные повторы от EvgeshaXT</value>
+  </data>
+  <data name="VideosOsuPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, osu!, Видео, Мгновенные повторы</value>
+  </data>
+  <data name="VideosOsuPageH1" xml:space="preserve">
+    <value>osu! видео и мгновенные повторы</value>
+  </data>
+
+  <!-- Videos/Tanki Online Page -->
+  <data name="VideosTankiOnlinePageTitle" xml:space="preserve">
+    <value>Танки Онлайн - Логово EvgeshaXT</value>
+  </data>
+  <data name="VideosTankiOnlinePageDescription" xml:space="preserve">
+    <value>Видео по Танкам Онлайн и мгновенные повторы от EvgeshaXT</value>
+  </data>
+  <data name="VideosTankiOnlinePageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Танки Онлайн, Видео, Мгновенные повторы</value>
+  </data>
+  <data name="VideosTankiOnlinePageH1" xml:space="preserve">
+    <value>Видео и мгновенные повторы по Танкам Онлайн</value>
+  </data>
+</root>

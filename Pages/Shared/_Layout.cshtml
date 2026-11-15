@@ -1,23 +1,10 @@
 @using System.Globalization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
 
 @{
     string currentPath = Context.Request.Path.Value ?? "";
     bool isRuPath = currentPath.StartsWith("/ru", StringComparison.OrdinalIgnoreCase);
-
-    string menuEvgeshaxtTitle, menuVideosTitle, menuVideos;
-
-    if (isRuPath)
-    {
-        menuEvgeshaxtTitle = "Главная страница";
-        menuVideosTitle = "Видео и мгновенные повторы";
-        menuVideos = "Видео";
-    }
-    else
-    {
-        menuEvgeshaxtTitle = "Main page";
-        menuVideosTitle = "Videos and instant replays";
-        menuVideos = "Videos";
-    }
 }
 
 <!DOCTYPE html>
@@ -41,8 +28,8 @@
         <header>
             <div class="header-left">
                 <ul class="nav">
-                    <li><a href="/" id="EvgeshaXT" translate="no" title="@menuEvgeshaxtTitle">EvgeshaXT</a></li>
-                    <li><a href="/videos" translate="yes" title="@menuVideosTitle">@menuVideos</a></li>
+                    <li><a href="/" id="EvgeshaXT" translate="no" title="@Localizer["MenuEvgeshaxtTitle"]">EvgeshaXT</a></li>
+                    <li><a href="/videos" translate="yes" title="@Localizer["MenuVideosTitle"]">@Localizer["MenuVideos"]</a></li>
                 </ul>
             </div>
             <div class="header-right">

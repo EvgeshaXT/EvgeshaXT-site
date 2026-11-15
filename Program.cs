@@ -37,14 +37,23 @@ app.Use(async (context, next) =>
 
         context.Response.Cookies.Append("culture", selectedCulture, options);
 
+        CultureInfo cultureInfo = new(selectedCulture);
+        CultureInfo.CurrentCulture = cultureInfo;
+        CultureInfo.CurrentUICulture = cultureInfo;
+
         string newPath = selectedCulture == "ru" ? GetRuPath(path) : GetEnPath(path);
         context.Response.Redirect(newPath);
+
         return;
     }
     else
     {
         string cookieCulture = context.Request.Cookies["culture"] ?? "";
         string culture = cookieCulture != "" ? cookieCulture : CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+
+        CultureInfo cultureInfo = new(culture);
+        CultureInfo.CurrentCulture = cultureInfo;
+        CultureInfo.CurrentUICulture = cultureInfo;
 
         bool isRuPath = path.StartsWith("/ru", StringComparison.OrdinalIgnoreCase);
         bool isRuCulture = culture == "ru" || culture == "be" || culture == "uk";
