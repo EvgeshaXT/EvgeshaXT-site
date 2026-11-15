@@ -9,7 +9,7 @@
 
 ## Структура проекта
 
-EvgeshaXT-site/
+EvgeshaXT/
 
 ├── Pages/ - Страницы сайта
 
