@@ -71,7 +71,7 @@ h1 {
 }
 h2 {
     font-size: 32px;
-    margin: 12px 0 12px 200px;
+    margin: 12px 0 12px 10%;
     text-align: left;
 }
 
@@ -137,7 +137,6 @@ div.directory-card h3 {
 }
 div.directory-card img {
     max-width: 512px;
-    height: auto;
 }
 
 video {
@@ -146,8 +145,9 @@ video {
 
 @media (max-device-width: 480px) {
     video {
-        margin: 16px;
-        width: 90%;
-        height: auto;
+        width: 100%;
+    }
+    div.directory-card img {
+        width: 100%;
     }
 }

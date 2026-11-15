@@ -47,7 +47,7 @@ app.Use(async (context, next) =>
         string culture = cookieCulture != "" ? cookieCulture : CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
 
         bool isRuPath = path.StartsWith("/ru", StringComparison.OrdinalIgnoreCase);
-        bool isRuCulture = (culture == "ru" || culture == "be" || culture == "uk");
+        bool isRuCulture = culture == "ru" || culture == "be" || culture == "uk";
 
         if (isRuCulture && !isRuPath)
         {
@@ -65,6 +65,8 @@ app.Use(async (context, next) =>
 });
 
 app.MapRazorPages();
+
+VideoManager.Initialize();
 
 app.Run();
 
