@@ -77,7 +77,7 @@ h2 {
 
 hr {
     border: 1px solid oklch(44.794% 0.00588 271.183);
-    margin: 32px 200px 32px 200px;
+    margin: 32px 200px;
 }
 
 p.myDear { margin-top: 10px; }
@@ -135,19 +135,16 @@ div.directory-card h3 {
     max-width: 512px;
     padding: 8px 16px 16px 16px;
 }
-div.directory-card img {
-    max-width: 512px;
-}
+div.directory-card img {  max-width: 512px; }
 
-video {
-    max-width: 512px;
-}
+video { max-width: 512px; }
 
 @media (max-device-width: 480px) {
-    video {
-        width: 100%;
-    }
-    div.directory-card img {
-        width: 100%;
-    }
+    h1 { font-size: 32px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 20px; }
+    p { font-size: 18px; }
+    hr { margin: 32px 50px; }
+    video { width: 100%; }
+    div.directory-card img { width: 100%; }
 }

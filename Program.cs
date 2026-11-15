@@ -111,7 +111,9 @@ string GetRuPath(string path)
 }
 string GetEnPath(string path)
 {
-    string newPath = path.Replace("/ru", "");
+    string newPath = "";
+
+    if (path.StartsWith("/ru", StringComparison.OrdinalIgnoreCase)) newPath = path[3..];
     
     if (newPath == "") return "/";
     return newPath;
