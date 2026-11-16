@@ -76,17 +76,51 @@ header div.header-right select {
     height: auto;
 }
 
-form {
-    display: inline-flex;
-    flex-direction: column;
+::selection { background-color: oklch(14.794% 0.00588 271.183); }
+
+main {
+    padding-top: 55px;
+    min-height: calc(100vh - 55px);
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
 }
 
 form input, button {
-    margin: 5px;
+    margin: 10px;
+    font-size: 32px;
+}
+form input::selection { background-color: oklch(77.15% 0.0367 226.832) }
+form button::selection { background-color: oklch(77.15% 0.0367 226.832) }
+
+div.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-main { padding-top: 55px; }
+div.to-registration {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+}
+div.to-registration a {
+    color: #d5a800;
+    font-size: 22px;
+}
+
+label {
+    font-size: 20px;
+}
 
 h1 {
     font-size: 40px;
@@ -106,8 +140,6 @@ hr {
 p.myDear { margin-top: 10px; }
 
 div.content-item { margin: 25px; }
-
-::selection { background-color: oklch(14.794% 0.00588 271.183); }
 
 #osu:link { color: oklch(77.432% 0.14976 345.159); }
 #osu:visited { color: oklch(77.432% 0.14976 345.159); }

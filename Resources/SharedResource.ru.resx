@@ -46,7 +46,13 @@
   <data name="LoginPagePasswordPlaceholder" xml:space="preserve">
     <value>Пароль</value>
   </data>
-  <data name="LoginPageSubmitValue" xml:space="preserve">
+  <data name="LoginPageNoAccountYet" xml:space="preserve">
+    <value>Ещё нет аккаунта?</value>
+  </data>
+  <data name="LoginPageCreateAccount" xml:space="preserve">
+    <value>Зарегистрироваться</value>
+  </data>
+  <data name="LoginPageSignIn" xml:space="preserve">
     <value>Войти</value>
   </data>
 

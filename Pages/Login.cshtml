@@ -12,10 +12,19 @@
     <meta name="keywords" content="@Localizer["LoginPageKeywords"]" />
 }
 
-<div class="content">
+<div class="login">
     <form method="post">
-        <input type="text" name="login" placeholder="@Localizer["LoginPageLoginPlaceholder"]" maxlength="24" required />
-        <input type="text" name="password" placeholder="@Localizer["LoginPagePasswordPlaceholder"]" maxlength="128" required />
-        <button type="submit">@Localizer["LoginPageSubmitValue"]</button> 
+        <fieldset>
+            <legend>@Localizer["LoginPageSignIn"]</legend>
+            <input type="text" name="login" placeholder="@Localizer["LoginPageLoginPlaceholder"]" maxlength="24" required />
+            <input type="password" name="password" placeholder="@Localizer["LoginPagePasswordPlaceholder"]" maxlength="128" required />
+            <div class="bottom">
+                <div class="to-registration">
+                    <label>@Localizer["LoginPageNoAccountYet"]</label> 
+                    <a href="/register" translate="yes">@Localizer["LoginPageCreateAccount"]</a>
+                </div>
+                <button type="submit">@Localizer["LoginPageSignIn"]</button>
+            </div>
+        </fieldset>
     </form>
 </div>
