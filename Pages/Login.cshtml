@@ -1,0 +1,21 @@
+@page
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+@model EvgeshaXT.Pages.LoginModel
+@{
+    ViewData["Title"] = @Localizer["LoginPageTitle"];
+}
+@section MetaTags {
+    <meta name="description" content="@Localizer["LoginPageDescription"]" />
+    <meta name="keywords" content="@Localizer["LoginPageKeywords"]" />
+}
+
+<div class="content">
+    <form method="post">
+        <input type="text" name="login" placeholder="@Localizer["LoginPageLoginPlaceholder"]" maxlength="24" required />
+        <input type="text" name="password" placeholder="@Localizer["LoginPagePasswordPlaceholder"]" maxlength="128" required />
+        <button type="submit">@Localizer["LoginPageSubmitValue"]</button> 
+    </form>
+</div>

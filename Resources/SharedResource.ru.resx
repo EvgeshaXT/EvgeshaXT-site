@@ -13,6 +13,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 
+  <!-- Header -->
   <data name="MenuEvgeshaxtTitle" xml:space="preserve">
     <value>Главная страница</value>
   </data>
@@ -21,6 +22,32 @@
   </data>
   <data name="MenuVideos" xml:space="preserve">
     <value>Видео</value>
+  </data>
+  <data name="MenuLoginTitle" xml:space="preserve">
+    <value>Войти в аккаунт или зарегистрироваться</value>
+  </data>
+  <data name="MenuLogin" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+
+  <!-- Login Page -->
+  <data name="LoginPageTitle" xml:space="preserve">
+    <value>Вход - Логово EvgeshaXT</value>
+  </data>
+  <data name="LoginPageDescription" xml:space="preserve">
+    <value>Войдите в аккаунт или зарегистрируйтесь на сайте EvgeshaXT</value>
+  </data>
+  <data name="LoginPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Вход, Регистрация, Аккаунт</value>
+  </data>
+  <data name="LoginPageLoginPlaceholder" xml:space="preserve">
+    <value>Логин</value>
+  </data>
+  <data name="LoginPagePasswordPlaceholder" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="LoginPageSubmitValue" xml:space="preserve">
+    <value>Войти</value>
   </data>
 
   <!-- Index Page -->

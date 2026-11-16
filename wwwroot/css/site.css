@@ -40,27 +40,50 @@ ul.nav {
     list-style: none;
     display: flex;
 }
-ul.nav a {
+header a {
     border-radius: 14px;
     margin: 5px;
     padding: 5px 10px 5px 10px;
     transition: all 250ms;
 }
+header a:hover { background-color: oklch(34.794% 0.00588 271.183); }
+
 ul.nav #EvgeshaXT {
     color: #d5a800;
     font-weight: bold;
 }
-ul.nav a:hover { background-color: oklch(34.794% 0.00588 271.183); }
 ul.nav #EvgeshaXT:hover { background-color: oklch(24.794% 0.00588 271.183); }
+
+header div.header-right {
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+}
+
+header div.header-right a {
+    border: oklch(34.794% 0.00588 271.183) solid 1px;
+    border-radius: 20px;
+}
+header div.header-right a:hover { background-color: oklch(39.794% 0.00588 271.183); }
 
 header div.header-right select {
     background-color: oklch(24.794% 0.00588 271.183);
     color: #ffffff;
-    margin: 5px 15px 5px 5px;
+    margin: 5px 15px;
     padding: 5px;
     border-radius: 4px;
     font-size: 20px;
     height: auto;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input, button {
+    margin: 5px;
 }
 
 main { padding-top: 55px; }
