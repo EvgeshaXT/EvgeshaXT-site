@@ -6,5 +6,5 @@ namespace EvgeshaXT.Pages.Ru.Videos;
 public class MusicModel : PageModel
 {
     public List<VideoManager.VideoCard> VideoCards { get; set; } = [];
-    public void OnGet() => VideoCards = VideoManager.GetVideoCards("music");
+    public void OnGet() => VideoCards = VideoManager.GetVideoCards("Music");
 }
