@@ -129,6 +129,20 @@
     <value>Мгновенные повторы Euro Truck Simulator 2</value>
   </data>
 
+  <!-- Videos/Music Page -->
+  <data name="VideosMusicPageTitle" xml:space="preserve"></data>
+    <value>Музыка - Логово EvgeshaXT</value>
+  </data>
+  <data name="VideosMusicPageDescription" xml:space="preserve">
+    <value>Видеомузыка, понравившаяся EvgeshaXT</value>
+  </data>
+  <data name="VideosMusicPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Музыка, Видео</value>
+  </data>
+  <data name="VideosMusicPageH1" xml:space="preserve">
+    <value>Музыка</value>
+  </data>
+
   <!-- Videos/osu! Page -->
   <data name="VideosOsuPageTitle" xml:space="preserve">
     <value>osu! - Логово EvgeshaXT</value>

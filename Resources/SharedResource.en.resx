@@ -130,6 +130,20 @@
     <value>Euro Truck Simulator 2 instant replays</value>
   </data>
 
+  <!-- Videos/Music Page -->
+  <data name="VideosMusicPageTitle" xml:space="preserve"></data>
+    <value>Music - EvgeshaXT's Den</value>
+  </data>
+  <data name="VideosMusicPageDescription" xml:space="preserve">
+    <value>Music videos, liked by EvgeshaXT</value>
+  </data>
+  <data name="VideosMusicPageKeywords" xml:space="preserve">
+    <value>EvgeshaXT, Music, Videos</value>
+  </data>
+  <data name="VideosMusicPageH1" xml:space="preserve">
+    <value>Music</value>
+  </data>
+
   <!-- Videos/osu! Page -->
   <data name="VideosOsuPageTitle" xml:space="preserve">
     <value>osu! - EvgeshaXT's Den</value>
