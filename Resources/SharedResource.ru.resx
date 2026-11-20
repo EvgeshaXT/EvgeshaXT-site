@@ -130,7 +130,7 @@
   </data>
 
   <!-- Videos/Music Page -->
-  <data name="VideosMusicPageTitle" xml:space="preserve"></data>
+  <data name="VideosMusicPageTitle" xml:space="preserve">
     <value>Музыка - Логово EvgeshaXT</value>
   </data>
   <data name="VideosMusicPageDescription" xml:space="preserve">

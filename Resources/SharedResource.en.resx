@@ -131,7 +131,7 @@
   </data>
 
   <!-- Videos/Music Page -->
-  <data name="VideosMusicPageTitle" xml:space="preserve"></data>
+  <data name="VideosMusicPageTitle" xml:space="preserve">
     <value>Music - EvgeshaXT's Den</value>
   </data>
   <data name="VideosMusicPageDescription" xml:space="preserve">
